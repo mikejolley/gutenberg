@@ -1,7 +1,7 @@
 BlockEditorProvider
 ===================
 
-BlockEditorProvider is a component which establishes a new block editing context, and serves as the entry point for a new block editor. It is implemented as a [controlled input](https://reactjs.org/docs/forms.html#controlled-components), expected to receive a value of a blocks array, calling `onChange` and/or `onInput` when the user interacts to change blocks in the editor. It is intended to be used as a wrapper component, where its children comprise the user interface through which a user modifies the blocks value.
+BlockEditorProvider is a component which establishes a new block editing context, and serves as the entry point for a new block editor. It is implemented as a [controlled input](https://reactjs.org/docs/forms.html#controlled-components), expected to receive a value of a blocks array, calling `onChange` and/or `onInput` when the user interacts to change blocks in the editor. It is intended to be used as a wrapper component, where its children comprise the user interface through which a user modifies the blocks value, notably via other components made available from this `block-editor` module.
 
 ## Props
 
