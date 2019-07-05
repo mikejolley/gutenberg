@@ -752,8 +752,7 @@ export function unlockPostSaving( lockName ) {
  * @return {Object} Action object
  */
 export function* resetEditorBlocks( blocks, options = {} ) {
-	for ( const name in sources ) {
-		const source = sources[ name ];
+	for ( const source in Object.values( sources ) ) {
 		if ( typeof source.applyAll === 'function' ) {
 			blocks = yield* source.applyAll( blocks );
 		}
